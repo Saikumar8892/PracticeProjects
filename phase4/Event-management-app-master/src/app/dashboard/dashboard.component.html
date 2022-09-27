@@ -1,10 +1,10 @@
-<nav class="navbar bg-info">
+<nav class="navbar bg-warning">
     <div class="container-fluid">
-        <h3 class="text-white">Employees Details</h3>
+        <h3 class="text-white">Employee List</h3>
         <div class="d-flex">
-            <button class="btn btn-primary" (click)="showModel=true">Add Employee</button>
+            <button class="btn btn-success" (click)="showModel=true">Add Employee</button>
             <form action="signin"><button type="submit" class="mx-3 btn btn-danger">Logout</button></form>
-            <button class="btn btn-secondary" (click)="showPassModel=true">Change Password</button> 
+            <button class="btn btn-dark" (click)="showPassModel=true">Change Password</button> 
         </div>
     </div>
 </nav>
@@ -27,8 +27,8 @@
         <td>{{row.last_name}}</td>
         <td>{{row.email}}</td>
         <td>
-          <button type="button" (click)="onEdit(row)" (click)="showModel=true" class="btn btn-danger btn-warning">Update</button>
-          <button type="button" (click)="deleteEmployee(row)" class=" mx-2 btn btn-info">Delete</button>
+          <button type="button" (click)="onEdit(row)" (click)="showModel=true" class="btn btn-inf0 btn-info">Update</button>
+          <button type="button" (click)="deleteEmployee(row)" class=" mx-2 btn btn-warning">Delete</button>
         </td>
       </tr>
     </tbody>
